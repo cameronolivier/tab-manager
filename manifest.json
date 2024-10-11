@@ -12,5 +12,5 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "options_page": "view.html"
+  "options_page": "cams-tab-manager.html"
 }
