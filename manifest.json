@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Cam's Tab Manager",
+  "name": "Boo! Tabs",
   "version": "1.0",
   "permissions": [
     "tabs",
@@ -12,5 +12,5 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "options_page": "view.html"
+  "options_page": "boo-tabs.html"
 }

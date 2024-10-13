@@ -2,11 +2,45 @@
 <html>
 <head>
     <title>Tab Manager</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: darkslategray;
+        }
+        #tabs {width: 200px; padding: 10px; padding-bottom: 20px; }
+h1 {color: hotpink}
+        button {
+            background-color: hotpink;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: blueviolet;
+        }
+        a {
+            background-color: hotpink;
+            text-decoration: none;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
+<div id="tabs">
+<h1>Boo! Tabs</h1>
 <button id="saveAndClose">Save & Close Tabs</button>
 <br>
-<a href="cams-tab-manager.html" target="_blank">View Saved Tabs</a>
+<a href="boo-tabs.html" target="_blank">View Saved Tabs</a>
+</div>
 <script src="popup.js"></script>
 </body>
 </html>
