@@ -18,6 +18,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             // Close the filtered tabs
             const tabIds = filteredTabs.map(tab => tab.id);
             chrome.tabs.remove(tabIds);
+
+            // Send a message to the "cams-tab-manager.html" page to refresh itself
+            chrome.tabs.query({ url: "*://*/*boo-tabs.html" }, (tabManagerTabs) => {
+                tabManagerTabs.forEach(tab => {
+                    chrome.tabs.sendMessage(tab.id, { action: "refreshPage" });
+                });
+            });
         });
     }
 });
